@@ -14,11 +14,11 @@ public class Bijection {
 
     // TOKEN related
     public static String getAdminToken() {
-        return Password.encrypt("gg, and well played");
+        return Password.encrypt("...ask admin");
     }
 
     public static boolean adminTokenCorrect(String token) {
-        return token.equals(Password.encrypt(Password.encrypt("gg, and well played")));
+        return token.equals(Password.encrypt(Password.encrypt("...ask admin!")));
     }
 
     public static String getDefaultPwdForDoc() {
@@ -237,7 +237,7 @@ public class Bijection {
     }
 
     public static String getEmailSenderPwd() {
-        return "ontkrenjxqskbfab";
+       return "...ask admin";
     }
 
     public static String getSmtpHostAddress() {
